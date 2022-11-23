@@ -4,8 +4,7 @@
 ### C++ 11 Environment
 ### This algorithm was experimented in simulation and realworld (using 2D Lidar)
 <img src="Log.png" width="40%" height="30%" alt="log"></img>
-//Clearance - blue Point
-//Obstacle - red point
+
 
 ### for example(main.cpp) 
 <pre><code>
@@ -13,6 +12,8 @@
 //desired yaw - radian from Vehicle Position to Goal Position 
 //distance array - distance data array from lidar
 //min, max angle - start angle, end angle on horizontal of view > 0
+//Clearance - blue Point
+//Obstacle - red point
 
 //final Distance, returnAngle: green line
 //final Dist1, PI1: black line
