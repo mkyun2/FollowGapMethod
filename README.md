@@ -4,13 +4,15 @@
 ### C++ 11 Environment
 ### This algorithm was experimented in simulation and realworld (using 2D Lidar)
 <img src="Log.png" width="40%" height="30%" alt="log"></img>
+//Clearance - blue Point
+//Obstacle - red point
 
 ### for example(main.cpp) 
 <pre><code>
 //yaw - vehicle heading in reference coordinates
 //desired yaw - radian from Vehicle Position to Goal Position 
 //distance array - distance data array from lidar
-//min, max angle - start angle, end angle on horizontal of view 
+//min, max angle - start angle, end angle on horizontal of view > 0
 
 //final Distance, returnAngle: green line
 //final Dist1, PI1: black line
@@ -19,8 +21,7 @@
 //finalAngle: GapAngle between obstacles
 #include "FollowGap.h"
 FollowGapMethod followGap;
-result = followGap.Solve(yaw, DesiredYaw,
-Distance array(2D lidar data), minimum angle(lidar coordinates), maximum angle(lidar coordinates));
+result = followGap.Solve(yaw, DesiredYaw,Distance array, minimum angle, maximum angle);
 
 double finalX=followGap.finalDistance/1000.0*cosf(followGap.returnAngle*M_PI/180.0);
 double finalY=followGap.finalDistance/1000.0*sinf(followGap.returnAngle*M_PI/180.0);
