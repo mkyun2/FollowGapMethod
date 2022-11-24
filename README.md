@@ -15,7 +15,7 @@
 //yaw - vehicle heading in reference coordinates
 //desired yaw - radian from Vehicle Position to Goal Position 
 //distance array - distance data array from lidar
-//min, max angle - start angle, end angle on horizontal of view > 0
+//min, max angle - start angle, end angle on horizontal of view >= 0
 //Clearance - blue Point
 //Obstacle - red point
 
